@@ -20,11 +20,8 @@ public class EventManager implements Listener {
         // Convert the message to OwO style
         String owoMessage = convertToOwO(message);
 
-        // Cancel the original message
-        event.setCancelled(true);
-
-        // Send the modified message to the server chat
-        Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', event.getPlayer().getDisplayName() + ": " + owoMessage));
+        // Replace raw message with owoMessage
+        event.setMessage(owoMessage);
     }
 // need to move this to its owne jar file
     public String convertToOwO(String message) {
