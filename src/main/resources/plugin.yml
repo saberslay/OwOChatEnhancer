@@ -1,0 +1,4 @@
+name: OwOChatEnhancer
+version: '1.0-SNAPSHOT'
+main: me.saberslay.owOChatEnhancer.OwOChatEnhancer
+api-version: '1.21'
